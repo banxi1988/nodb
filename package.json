@@ -1,0 +1,43 @@
+{
+  "name": "nodb",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "description": "尝试使用 Node + TypeScript 实现一个简单的关系型数据库，类似 SQLite",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banxi1988/nodb.git"
+  },
+  "keywords": [
+    "node",
+    "sqlite",
+    "typescript"
+  ],
+  "author": "banxi1988",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/banxi1988/nodb/issues"
+  },
+  "homepage": "https://github.com/banxi1988/nodb#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.10",
+    "husky": "^1.0.0-rc.13",
+    "jest": "^23.6.0",
+    "prettier": "^1.13.7",
+    "pretty-quick": "^1.6.0",
+    "ts-jest": "^23.10.1",
+    "ts-node": "^7.0",
+    "tslint": "^5.0",
+    "tslint-eslint-rules": "^5.3.1",
+    "typescript": "^3.1.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
